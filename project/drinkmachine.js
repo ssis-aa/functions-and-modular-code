@@ -2,10 +2,23 @@
 /*
 DO NOT EDIT CODE BETWEEN THIS LINE AND LINE 218. It will likely break the simulation!
 Code below is licensed according to the MIT license. See the details below.
-Code written by Evan Weinberg, Advanced Automation @ Saigon South International School, September 2021
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+Code written by Evan Weinberg, 
+Advanced Automation @ Saigon South International School, September 2021
+Permission is hereby granted, free of charge, to any person obtaining a copy of 
+this software and associated documentation files (the "Software"), to deal in 
+the Software without restriction, including without limitation the rights to 
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of 
+the Software, and to permit persons to whom the Software is furnished to do so, 
+subject to the following conditions:
+The above copyright notice and this permission notice shall be included in all 
+copies or substantial portions of the Software.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS 
+FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR 
+COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER 
+IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN 
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 */
 class Cup {
  
@@ -52,7 +65,6 @@ class DrinkMachine {
    private COOLER_POWER = -170.97756
  
  
- 
    constructor() {
        this.reservoirVolume = 5000
        this.reservoirTemperature = 24.0
@@ -70,7 +82,6 @@ class DrinkMachine {
        this.loopCount = 0;
    };
  
- 
    updateMachineStatus() {
  
        this.loopCount += 1;
@@ -78,27 +89,23 @@ class DrinkMachine {
        this.updateReservoirVolume();
        this.updateMixingContainerTemperature();
  
- 
    };
+
    private updateReservoirVolume() {
- 
- 
  
        if (this.reservoirVolume > 0 && this.fillingMixingContainer) {
            if (this.mixingContainerVolume <= this.MIXING_CONTAINER_MAX_VOLUME)
                this.reservoirVolume -= this.RESERVOIR_FLOW_RATE_PER_LOOP
            this.mixingContainerVolume += this.RESERVOIR_FLOW_RATE_PER_LOOP
- 
        }
- 
    }
+
    addGrounds() {
  
        if (this.amountOfGroundsStored > 0) {
  
            this.amountOfGroundsStored -= this.GROUNDS_PER_SCOOP
            this.groundsInMixingContainer += this.GROUNDS_PER_SCOOP
- 
        }
    }
    addSodaMix() {
@@ -107,9 +114,7 @@ class DrinkMachine {
  
            this.amountOfSodaMixStored -= this.SODA_MIX_PER_SCOOP //updated 18 August
            this.sodaMixInMixingContainer += this.SODA_MIX_PER_SCOOP //updated 18 August
- 
        }
- 
    }
  
    carbonateMixingContainer() {
