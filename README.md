@@ -30,13 +30,13 @@ You must then build your own two automated tasks with any of the tools above. Yo
 
 ### 2-1 Introduction to Functions
 
-YouTube Explanation (6:08) - Last week we started looking at ways to break tasks down into individual steps. This video formalizes this using the programming concept of a function. You'll learn some vocabulary of functions and ways to describe them using inputs, outputs, and how they relate to each other through algorithms.
+[YouTube Explanation](https://youtu.be/PdFo0oPfExE) (6:08) - Last week we started looking at ways to break tasks down into individual steps. This video formalizes this using the programming concept of a function. You'll learn some vocabulary of functions and ways to describe them using inputs, outputs, and how they relate to each other through algorithms.
 
 ### 2-2 Functions Case Study: Gmail Auto-reply
 
-YouTube Video (10:43) - Using what I showed you in the last video, we take a look at code for my Gmail Auto-reply script and analyze functions for inputs, outputs, and algorithms. I show a few examples and leave the rest for you to do with your team. Along the way, we learn a bit about arrays, the logical OR operator, and some other elements of Javascript.
+[YouTube Video](https://youtu.be/JRtkkBl_jik) (10:43) - Using what I showed you in the last video, we take a look at code for my Gmail Auto-reply script and analyze functions for inputs, outputs, and algorithms. I show a few examples and leave the rest for you to do with your team. Along the way, we learn a bit about arrays, the logical OR operator, and some other elements of Javascript.
 
-Template for Analysis - and assignment in Schoology
+[Template for Analysis](https://docs.google.com/document/d/1CxkM5ltds7K9-d5_DDw3t041DTU4_1qlElutRF3gO1o/edit?usp=sharing) - and assignment in Schoology
 
 ## 3 Shock Detector Case Study
 
@@ -73,15 +73,68 @@ This is [microbit/modularCodeExampleStart.js](microbit/modularCodeExampleStart.j
 
 ## 6 Module Maker - Creating modular code yourself!
 
+### 6-1 Module maker - create code yourself **** standard 1 and 3 summative
 
+Students create modular code and submit it. The code and description will be graded in the standards 1 and 3.
+
+- [Task Description and Rubrics for Standards 1 and 3](https://docs.google.com/document/d/1gcF-INFA0RMyfwlA02MbkJl-CQ1TfVutXSBKkncSpqA/edit)
 
 ## 7 Drink Machine Part I
+
+### 7-1 Drink Machine Project
+
+- [Project Description and Rubric for Standard 4](https://docs.google.com/document/d/164hLZgbn-AGFGD7qI61FHI-yzYAJ24LLE2aYpoHkzXk/edit?usp=sharing)
+- [Project 2 Starter Code](https://docs.google.com/document/d/10csNePyqpicGid0x4bvijsvoTv_bI0IBzFOO8Ls6BPM/edit?usp=sharing)
+- [Video Introduction](https://youtu.be/ImK_ESZ_ZBs) (11:11)
+
+Review of global and local variables in [https://makecode.microbit.org/](https://www.google.com/url?q=https%3A%2F%2Fmakecode.microbit.org%2F&sa=D&sntz=1&usg=AOvVaw2T7X79PVNASOwGOCBtOMeQ)  Example code: [https://makecode.microbit.org/_PMgfmrJg31tw](https://www.google.com/url?q=https%3A%2F%2Fmakecode.microbit.org%2F_PMgfmrJg31tw&sa=D&sntz=1&usg=AOvVaw2eLJbNTnyjpM4IKbhlWZm8) 
 
 
 ## 8 Drink Machine Part II
 
+Reflect on the 3 stages when making a cup of coffee:
+
+- Fill the container `myDrinkMachine.startFillingContainer()`
+- Add grounds `myDrinkMachine.addGrounds()`
+- Heat it up `myDrinkMachine.turnHeaterOn()`
+
+### 8-2 Drink Machine - Sharing Stage 1 W4-3 standard 4
+
+Students submit the code that generates two of the drinks from the list as assigned from class.
+
+- [W4-3 Project 2 - Simulator Code](https://docs.google.com/document/d/1Vhk-N7BR_ss5aQQkq2SMmYL4ZSuDCk35sn79zziozt8/edit)
+
+### 8-3 Drink Machine Level Up videos
+
+Now that you've played with Drink Machine and have done some things the long way, Mr. Weinberg is showing the better ways than the wait times and further details:
+
+- [Video 1](https://youtu.be/o-AYMjHhWLE) (7:54) – calculate the time exactly with Desmos
+- [Video 2](https://youtu.be/2ZAU6DDwOkU) (6:46) – using the input size variable - using the `if/then/switch`
+- [Video 3](https://youtu.be/e86X7hbPAIo) (6:39) – wait ... wait ... I'm doing something
 
 ## 9 Drink Machine Testing Software
 
+### 9-1 Drink Machine Testing Software
+
+Copy the code from the following link into your program. It looks like this:
+
+``` js
+input.onButtonPressed(Button.A, function () {
+    serial.writeLine("I start to make __specification-A__")
+    // call your function here
+})
+
+input.onButtonPressed(Button.B, function () {
+    serial.writeLine("I start to make __specification-B__")
+})
+
+// You can use the degree symbol ˚C in your specification
+serial.writeLine("Press A for __specification-A__ and B for __specification-B__")
+```
+
+After pressing Button A and B it should generate the assigned drink. Assignments are done using the following programs:
+
+- [RandomDrinkMachineDrink2022](https://www.google.com/url?q=https%3A%2F%2Fmakecode.microbit.org%2F_6e946EhkLMg7&sa=D&sntz=1&usg=AOvVaw0jA7wKhiaGlhpnjuRXkZxI)
+- [RandomDrinkMachineDrink2021](https://www.google.com/url?q=https%3A%2F%2Fmakecode.microbit.org%2F_8oj6rwaxfgdi&sa=D&sntz=1&usg=AOvVaw1n8IlOqTlUD1XOSMKg7Vdq)
 
 For this project the code is [project/drinkmachine.js](project/drinkmachine.js)
