@@ -1,5 +1,10 @@
 # Unit 1: Functions and Modular Code
 
+[![Deploy Jekyll with GitHub Pages dependencies preinstalled](https://github.com/ssis-aa/functions-and-modular-code/actions/workflows/jekyll-gh-pages.yml/badge.svg)](https://github.com/ssis-aa/functions-and-modular-code/actions/workflows/jekyll-gh-pages.yml)
+[![GitHub release](https://img.shields.io/github/release/ssis-aa/functions-and-modular-code.svg)](https://GitHub.com/ssis-aa/functions-and-modular-code/releases/)
+[![MIT license](https://img.shields.io/github/license/ssis-aa/functions-and-modular-code)](https://ssis-aa.mit-license.org/)
+
+
 In our first unit we learn the basics of defining and calling functions, providing input parameters and return output values. And we define and describe the algorithms to solve our problems. Rearranging program code to become modular makes it easier to reuse code and reduce errors.
 
 <img src="https://raw.githubusercontent.com/ssis-aa/.github/main/profile/microbit.gif" align="right" width="20%">
