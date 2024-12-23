@@ -86,6 +86,8 @@ Students create modular code and submit it. The code and description will be gra
 
 ## 7 Drink Machine Part I
 
+<img src="assets/drinkmachine.jpg" align="right" width="30%">
+
 ### 7-1 Drink Machine Project
 
 - [Project Description and Rubric for Standard 4](https://docs.google.com/document/d/164hLZgbn-AGFGD7qI61FHI-yzYAJ24LLE2aYpoHkzXk/edit?usp=sharing)
